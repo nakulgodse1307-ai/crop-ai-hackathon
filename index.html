@@ -259,6 +259,13 @@
                 btn.disabled = false;
             }, 2000);
         }
+// Make placeholder links interactive for the demo
+        document.querySelectorAll('aside a, aside button').forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert("Hackathon Prototype: This module is planned for Phase 2 of our roadmap!");
+            });
+        });
     </script>
 </body>
 </html>
